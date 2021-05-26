@@ -300,6 +300,11 @@ public class Quiz extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args){
-        new Quiz("").setVisible(true);
+    	///*///
+       try {
+    	   new Quiz("").setVisible(true);
+       }catch(Exception e ) {
+    	   System.out.print("Exception in setVeriable");
+       }
     }
 }
